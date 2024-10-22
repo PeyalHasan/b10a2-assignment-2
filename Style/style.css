@@ -332,5 +332,7 @@ header{
         width: 100%;
 
     }
-
+    .exercise-grid{
+        grid-template-columns:1fr ;
+    }
 }
