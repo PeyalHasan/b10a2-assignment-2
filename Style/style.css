@@ -18,10 +18,15 @@ body{
     padding-top: 0px 20px;
 }    
 .dark{
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.7);
 }
 .dark2{
     background-color: rgba(255, 255, 255, 0.1);
+}
+.dark3{
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 .primary-bg{
     background-color: rgb(230, 83, 60);
@@ -346,6 +351,39 @@ form{
     width: 90%;
     margin-bottom: 10px;
 }
+.meet{
+    max-width: 60%;
+    text-align: center;
+}
+.meet h4{
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.team{
+    grid-template-columns: repeat(3,1fr);
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.trainer{
+    height: 300px;
+    width: 300px;
+    image-resolution: 1200px;
+    border-radius: 15px;
+}
+.teams{
+    position: relative;
+    width: 300px;
+    height: 315px;
+    
+}
+.teams div{
+    position: relative;
+    top: -100px;
+    right: -20px;
+}
 
 @media screen and (max-width: 576px) {
     header{
@@ -399,5 +437,14 @@ form{
     .bmi-form{
         width: 60%;
         margin: 0 auto;
+    }
+    .team{
+        grid-template-columns: 1fr;
+    }
+    .teams{
+        width: 100%;
+    }
+    .trainer{
+        width: 100%;
     }
 }
